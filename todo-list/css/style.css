@@ -28,3 +28,31 @@
     margin-left: 0.625rem;
     width: 1.8rem;
 }
+.row {
+    background: #edeef0;
+    justify-content: space-between;
+    border-radius: 2.325rem;
+    padding-left: 1.325rem;
+    padding-bottom: .245rem;
+    display: flex;
+    align-items: center;
+}
+input {
+    background: transparent;
+    flex: 1;
+    padding: 0.625rem;
+    font-weight: 0.925rem;
+    border: none;
+    outline: none;
+    
+}
+.btn {
+    background-color: #ff5945;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 1rem 2.625rem;
+    border-radius: 6.4rem;
+    cursor: pointer;
+}
