@@ -5,7 +5,7 @@ const listContainer = document.getElementById('lists');
 /**
  * Add a list item to the list container (lists)
  */
-function addNewTask() {
+const addNewTask = () =>{
     const inputValue = inputBox.value == '';
     if (inputValue)
         alert('Please enter a task!');
@@ -17,7 +17,8 @@ function addNewTask() {
             span.innerHTML = "\u00d7";
             li.appendChild(span);
     }
-    inputBox.value = ''
+    inputBox.value = '';
+    saveTaskData();
 }
 
 /**
@@ -28,7 +29,27 @@ function addNewTask() {
 listContainer.addEventListener('click', function(e) {    
     if (e.target.tagName === 'LI') {
         e.target.classList.toggle('checked-task');
+        saveTaskData();
     } else if (e.target.tagName === 'SPAN') {
         e.target.parentElement.remove();
+        saveTaskData();
     }
 }, false);
+
+/**
+ * Save the task(s) data into user browser
+ */
+const saveTaskData = () => {
+    localStorage.setItem('taskData', listContainer.innerHTML)
+}
+/**
+ * Get the task(s) data from user browser
+ */
+const getTaskData = () => {
+    listContainer.innerHTML = localStorage.getItem('taskData');
+}
+
+/**
+ * Displays the list of tasks available
+ */
+getTaskData();
