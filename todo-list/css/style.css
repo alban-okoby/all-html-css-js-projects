@@ -71,6 +71,10 @@ ul li {
     padding: 12px 8px 12px 50px;
     user-select: none;
     position: relative;
+    overflow-x: wrap;
+    overflow-wrap:break-word;
+    padding-right: 50px;
+
 }
 
 ul li::before {
