@@ -2,6 +2,9 @@
 const inputBox = document.getElementById('inputBox');
 const listContainer = document.getElementById('lists');
 
+/**
+ * Add a list item to the list container (lists)
+ */
 function addNewTask() {
     const inputValue = inputBox.value == '';
     if (inputValue)
@@ -16,3 +19,16 @@ function addNewTask() {
     }
     inputBox.value = ''
 }
+
+/**
+ * Line-through the task when task is finished(clicked)
+ * Toggle a task when the user clicks on the span (cross)
+ * 
+ */
+listContainer.addEventListener('click', function(e) {    
+    if (e.target.tagName === 'LI') {
+        e.target.classList.toggle('checked-task');
+    } else if (e.target.tagName === 'SPAN') {
+        e.target.parentElement.remove();
+    }
+}, false);
