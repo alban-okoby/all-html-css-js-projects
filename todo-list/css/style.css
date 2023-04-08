@@ -36,6 +36,7 @@
     padding-bottom: .245rem;
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
 }
 input {
     background: transparent;
@@ -46,7 +47,7 @@ input {
     outline: none;
     
 }
-.btn {
+.todo-app .btn {
     background-color: #ff5945;
     color: white;
     border: none;
@@ -55,4 +56,37 @@ input {
     padding: 1rem 2.625rem;
     border-radius: 6.4rem;
     cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    cursor: pointer;
+   padding: 12px 8px 12px 50px;
+   user-select: none;
+   position: relative;
+}
+ul li::before {
+    background: url('../images/unchecked.png');
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-size: cover;
+    background-position: center;
+    top: 12px; left: 8px;
+    border-radius: 50%;
+}
+ul li.checked-task {
+    text-decoration: line-through;
+    color: #555;
+}
+ul li.checked-task::before {
+    background: url('../images/checked.png');
+    height: 28px;
+    width: 28px;
+    background-size: cover;
+    background-position: center;
+    top: 12px; left: 8px;
+    border-radius: 50%;
 }
