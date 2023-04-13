@@ -1,10 +1,6 @@
-# all-html-css-js-projects
-
-Find here more snippets to boosted your productivity <\💻> 💥🚀
-======================================================================== <br> ========================================================================
-### 1) Todo Task App
-<a href="./todo-list"> todoTaskApp </a>
-A simple Task list maker
+### Todo Task App
+<a href="https://alban-okoby.github.io/all-html-css-js-projects/todo-list"> See Demo 🌍 </a> <br>
+A simple Task list maker <br>
 <ul>
     <li> Create a list of tasks </li>
     <li> Make task completed ✔</li>
@@ -19,16 +15,6 @@ A simple Task list maker
 ### Demo screenshot
 <img src="todo-list/project_screens/screen1.png">
 ======================================================================== <br> ======================================================================== <br>
-<h3> 2) .. coming soon  </h3>
 
-======================================================================== <br> ======================================================================== <br>
-
-<h3> 3) .. coming soon  </h3>
-
-======================================================================== <br> ======================================================================== <br>
-
-<h3> 4) .. coming soon  </h3>
-
-======================================================================== <br> ======================================================================== <br>
 #### Happy coding <\💻>
 Best regards, cheer ⭐
